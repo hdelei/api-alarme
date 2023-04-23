@@ -1,0 +1,38 @@
+Desafio:
+  * Criar uma página web que consome a API com os seguintes endpoints:
+  * criar os campos com númemro de zona, botão com o comando armar/desarmar,
+  * botão para enviar um disparo e o que mais a imaginação mandar
+
+http://localhost:8080/api/heartbeat 
+  * tipo de requisição GET
+  * envia aviso de keep alive e recebe a resposta do receptor IP
+  * formato esperado: não precisa enviar nada, apenas chamar a url
+
+http://localhost:8080/api/evento
+  * tipo de requisição POST
+  * envia o evento simulando o painel de alarme e recebe a resposta do servidor IP
+  * formato esperado: {evento: 130, qualificador: 'aber', zona: 1}
+  * onde 'evento' é igual a qualquer evento do arquivo app_jon.py que vai de 100 a 625
+  * QUALIFICADOR pode ser 'aber', 'rest' ou '*' - 'aber' é novo evento ou abertura, 
+  * 'rest' é restauração ou fechamento e '*' é evento sem qualificador, exemplo: evento de alteração na programação
+  * 'zona é qualquer numero de zona de 1 a 999'
+
+Necessário instalar o Bottle para poder utilizar a API
+
+na linha de comando, digite: pip install Bottle
+para rodar, estando na linha de comando, navegue até a pasta onde salvou o arquivo app_jon.py
+crie uma pasta no C: com o nome app
+cole o app_jon.py nesta pasta
+
+para navegar até a pasta, vá até o prompt e
+digite C:
+digite CD app
+
+para iniciar a API, digite
+python app_jon.py
+
+* a API vai estar ativa enquanto a janela do prompt estiver aberta 
+* a porta foi deixada como 8080, mas pode ser substituída se quiser
+
+
+
