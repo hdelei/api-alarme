@@ -1,8 +1,9 @@
 Desafio criado para o meu amigo:
-  * Criar uma página web que consome a API com os seguintes endpoints:
+  * Criar uma página web que consome a API com 2 endpoints
   * criar os campos com númemro de zona, botão com o comando armar/desarmar,
   * botão para enviar um disparo e o que mais a imaginação mandar
 
+ENDPOINTS:
 http://localhost:8080/api/heartbeat 
   * tipo de requisição GET
   * envia aviso de keep alive e recebe a resposta do receptor IP
